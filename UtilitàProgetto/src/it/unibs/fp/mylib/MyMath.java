@@ -35,6 +35,34 @@ public class MyMath {
 		return posizioneMax;
 	}
 	
+	public static int valoreMaxArray(int []array){
+		int valoreMax = array[0];
+		int posizioneMax = 0;
+		
+		for(int i = 0; i < array.length; i++){
+			if(array[i] > valoreMax){
+				valoreMax = array[i];
+				posizioneMax = i;
+			}
+		}
+		
+		return posizioneMax;
+	}
+	
+	public static int valoreMaxArray(int []array, int lunghezzaArray){
+		int valoreMax = array[0];
+		int posizioneMax = 0;
+		
+		for(int i = 0; i < lunghezzaArray; i++){
+			if(array[i] > valoreMax){
+				valoreMax = array[i];
+				posizioneMax = i;
+			}
+		}
+		
+		return posizioneMax;
+	}
+	
 	public static double valoreMedioArray(double []array){
 		double valoreMedio = 0;
 		double somma = 0;
