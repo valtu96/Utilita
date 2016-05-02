@@ -7,34 +7,6 @@ public class MyMath {
 		return Math.round(value * temp) / temp; 
 	}
 	
-	public static int valoreMaxArray(double []array){
-		double valoreMax = array[0];
-		int posizioneMax = 0;
-		
-		for(int i = 0; i < array.length; i++){
-			if(array[i] > valoreMax){
-				valoreMax = array[i];
-				posizioneMax = i;
-			}
-		}
-		
-		return posizioneMax;
-	}
-	
-	public static int valoreMaxArray(double []array, int lunghezzaArray){
-		double valoreMax = array[0];
-		int posizioneMax = 0;
-		
-		for(int i = 0; i < lunghezzaArray; i++){
-			if(array[i] > valoreMax){
-				valoreMax = array[i];
-				posizioneMax = i;
-			}
-		}
-		
-		return posizioneMax;
-	}
-	
 	public static int valoreMaxArray(int []array){
 		int valoreMax = array[0];
 		int posizioneMax = 0;
@@ -51,6 +23,34 @@ public class MyMath {
 	
 	public static int valoreMaxArray(int []array, int lunghezzaArray){
 		int valoreMax = array[0];
+		int posizioneMax = 0;
+		
+		for(int i = 0; i < lunghezzaArray; i++){
+			if(array[i] > valoreMax){
+				valoreMax = array[i];
+				posizioneMax = i;
+			}
+		}
+		
+		return posizioneMax;
+	}
+	
+	public static double valoreMaxArray(double []array){
+		double valoreMax = array[0];
+		int posizioneMax = 0;
+		
+		for(int i = 0; i < array.length; i++){
+			if(array[i] > valoreMax){
+				valoreMax = array[i];
+				posizioneMax = i;
+			}
+		}
+		
+		return posizioneMax;
+	}
+	
+	public static double valoreMaxArray(double []array, int lunghezzaArray){
+		double valoreMax = array[0];
 		int posizioneMax = 0;
 		
 		for(int i = 0; i < lunghezzaArray; i++){
