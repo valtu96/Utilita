@@ -6,7 +6,7 @@ e sia presentata in fondo al menu
 */
 package it.unibs.fp.mylib;
 
-class MyMenu{
+public class MyMenu{
   final private static String CORNICE = "--------------------------------";
   final private static String VOCE_USCITA = "0\tEsci";
   final private static String RICHIESTA_INSERIMENTO = "Digita il numero dell'opzione desiderata > ";
