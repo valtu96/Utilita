@@ -5,7 +5,7 @@ e sia presentata in fondo al menu
 
 */
 package it.unibs.fp.mylib;
-
+/*COMMENTO DI PROVA*/
 public class MyMenu{ 
   final private static String CORNICE = "--------------------------------";
   final private static String VOCE_USCITA = "0\tEsci";
