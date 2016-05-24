@@ -23,5 +23,21 @@ public class MyNumeriCasuali {
 		int casual = estrattore.nextInt(range);
 		return casual + min;
 	}
-
+	
+	/**
+	 * Estrae un intero casuale compreso tra il valore min e il valore max
+	 * 
+	 * @param min	il valore minimo
+	 * @param max	il valore massimo
+	 * @return		il double estratto compreso tra i due parametri
+	 */
+	public static double estraiDouble(double min, double max)
+	{
+	 double range = max - min;
+	 double casual = estrattore.nextDouble();
+	 
+	 double posEstratto = range*casual;
+	 
+	 return posEstratto + min;
+	}
 }
