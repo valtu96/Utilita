@@ -7,6 +7,8 @@ package it.unibs.fp.mylib;
  *
  */
 public class MyCheck {
+	public final static String EMAIL_PATTERN = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
+	
 	/**
 	 * Controlla se il carattere passato e' una lettera dell'alfabeto
 	 * @param carattere carattere da controllare
