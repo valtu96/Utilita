@@ -10,7 +10,7 @@ import java.util.Date;
  *
  */
 public class MyTime {
-	private final static String PATTERN_DATA = "dd/MM/yyyy";
+	public final static String PATTERN_DATA = "dd/MM/yyyy";
 	
 	/**
 	 * Converte i secondi in una stringa nel formato mm:ss
