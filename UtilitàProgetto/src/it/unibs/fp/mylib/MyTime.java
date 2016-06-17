@@ -1,5 +1,6 @@
 package it.unibs.fp.mylib;
 
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -11,6 +12,7 @@ import java.util.Date;
  */
 public class MyTime {
 	public final static String PATTERN_DATA = "dd/MM/yyyy";
+	public static final DateFormat DATE_FORMAT = new SimpleDateFormat("dd/MM/yyyy");
 	
 	/**
 	 * Converte i secondi in una stringa nel formato mm:ss
