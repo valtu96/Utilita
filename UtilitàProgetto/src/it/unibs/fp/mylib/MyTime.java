@@ -24,12 +24,18 @@ public class MyTime {
 	    return String.format("%02d:%02d", seconds / 60, seconds % 60);
 	}
 	
-	public static Date creaData(String data) throws ParseException{
-		SimpleDateFormat sdf = new SimpleDateFormat();
+	public static Date creaData(String data){
+		try{
+			SimpleDateFormat sdf = new SimpleDateFormat();
 		
-		sdf.applyPattern(PATTERN_DATA);
-		Date daRitornare = sdf.parse(data);
-		return daRitornare;
+			sdf.applyPattern(PATTERN_DATA);
+			Date daRitornare = sdf.parse(data);
+			return daRitornare;
+		}
+		catch(ParseException e){
+			e.getStackTrace();
+			return null;
+		}
 	}
 	
 	public static String toStringData(Date data){
