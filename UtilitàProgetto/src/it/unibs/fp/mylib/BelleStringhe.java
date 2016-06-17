@@ -70,5 +70,15 @@ public class BelleStringhe{
 		return res.toString();
 	}
 	
+	/**
+	 * Metodo che toglie tutti gli spazi presenti in una stringa
+	 * @param s stringa da cui serve rimuovere gli spazi
+	 * @return stringa senza spazi
+	 */
+	public static String togliSpazi(String s){
+		String s1=s.trim();
+		s1=s1.replace(" ", "");
+		return s;
+	}
 }
 
