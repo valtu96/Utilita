@@ -71,9 +71,9 @@ public class MyServizioFile{
 		    if (file.exists())
 		      System.out.println("Il file  esiste");
 		    else if (file.createNewFile())
-		      System.out.println("Il file � stato creato");
+		      System.out.println("Il file e' stato creato");
 		    else
-		      System.out.println("Il file non pu� essere creato");
+		      System.out.println("Il file non puo' essere creato");
 		  }
 		  catch (IOException e) {
 		    e.printStackTrace();
