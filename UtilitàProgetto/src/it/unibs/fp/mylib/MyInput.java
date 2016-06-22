@@ -1,4 +1,5 @@
 package it.unibs.fp.mylib;
+import java.text.ParseException;
 import java.util.*;
 
 public class MyInput{
@@ -167,4 +168,26 @@ public class MyInput{
 			  return false;
 	  }
 
+	  public static Date leggiData(String messaggio){
+		  boolean controlla = true;
+		  String data = null;
+		  do{
+			  controlla = true;
+			  data = leggiStringaNonVuota(messaggio);
+			  for(int i = 0; i < data.length(); i++){
+			  	if(!MyCheck.checkNumero(data.charAt(i)) && data.charAt(i)!='/')
+				  	controlla = false;
+			  }
+			  if(controlla){
+				  MyTime.DATE_FORMAT.setLenient(false);
+				  try{
+					  MyTime.DATE_FORMAT.parse(data);
+				  } 
+				  catch(ParseException e){
+					  controlla = false;
+				  }
+			  }
+		  }while(controlla == false);
+		  return MyTime.creaData(data);
+	  }
 }
