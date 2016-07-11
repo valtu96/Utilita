@@ -136,5 +136,27 @@ public class MyServizioFile{
 			e.printStackTrace();
 		}
 	}
+	
+	public static void eliminaFile(String path){
+		File f = new File(path);
+
+	    // Mi assicuro che il file esista
+	    if (!f.exists())
+	      throw new IllegalArgumentException("Il File o la Directory non esiste: " + path);
+
+	    // Se è una cartella verifico che sia vuota
+	    if (f.isDirectory()) {
+	      String[] files = f.list();
+	      if (files.length > 0)
+	        throw new IllegalArgumentException("La Directory non è vuota: " + path);
+	    }
+
+	    // Provo a cancellare
+	    boolean success = f.delete();
+
+	     // Se si è verificato un errore...
+	    if (!success)
+	      throw new IllegalArgumentException("Cancellazione fallita");
+	  }
 }
 
